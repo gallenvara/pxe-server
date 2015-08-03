@@ -2,6 +2,8 @@
 
 #mount CentOS iso
 
+yum install dhcp tftp tftp-server syslinux wget vsftpd
+
 MOUNT_POINT=/mnt/iso
 TARGET_DIR=/var/ftp/pub/cent
 TFTP_DIR=/var/lib/tftpboot
