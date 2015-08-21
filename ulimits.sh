@@ -1,7 +1,8 @@
 #!/bin/sh
 #modify system limit configuration
 
-echo "*soft nofile = 32768
-      *hard nofile = 65536" >>/etc/security/limits.conf
+ulimit -n 327680
+echo "*soft nofile = 327680
+      *hard nofile = 655360" >>/etc/security/limits.conf
 
-echo "ulimit -n 32768" >>/etc/profile
+echo "ulimit -n 327680" >>/etc/profile
