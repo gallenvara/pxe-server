@@ -3,7 +3,7 @@
 function ftp_kickstart_prepare {
     file=$1
     sed -i "s/ftpserver/url --url=\"ftp:\/\/$ip_self\/pub\/cent\/cent_every\"/" $1
-    sed -i "s/cp.* \/mnt\/stage2\/intel\/\(.*\) \/tmp\/intel/cd \/tmp\/intel; wget -nH --cut-dirs=4 -m ftp:\/\/$ip_self\/pub\/cent\/cent_every\/intel\/*.sh/" $1
+    sed -i "s/cp.* \/mnt\/stage2\/pxeserver\/\(.*\) \/tmp\/pxeserver/cd \/tmp\/pxeserver; wget -nH --cut-dirs=4 -m ftp:\/\/$ip_self\/pub\/cent\/cent_every\/pxeserver\/*.sh/" $1
 }
 
 TFTP_DIR=/var/lib/tftpboot

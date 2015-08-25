@@ -1,10 +1,9 @@
 # pxe-server
 pxe-server configuration.
 
-    cp CentOS-7-x86_64-Everything-1503-01.iso /home 
-    mkdir /tmp/intel
-    cp /root/pxe-server/* /tmp/intel
-    cd /tmp/intel
+    mkdir /tmp/pxeserver
+    cp /root/pxe-server/* /tmp/pxeserver
+    cd /tmp/pxeserver
     ./pxe_firsttime.sh
     ./pxe_start.sh
   
