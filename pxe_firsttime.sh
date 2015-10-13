@@ -15,7 +15,7 @@ mkdir -p $TFTP_DIR
 mkdir -p $TFTP_DIR/netboot
 
 read -p "Please input the directory of CentOS.iso: " CENTOS_DIR
-mount -o loop CENTOS_DIR $MOUNT_POINT
+mount -o loop $CENTOS_DIR $MOUNT_POINT
 cp /tmp/pxeserver/* $TARGET_DIR/cent_every/pxeserver
 cp /tmp/pxeserver/ks.cfg $TARGET_DIR/cent_every
 cp -r $MOUNT_POINT/* $TARGET_DIR/cent_every
