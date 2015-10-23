@@ -1,4 +1,4 @@
-# pxe-server
+# This is a pxe-server tourial.
 pxe-server configuration.
 
     mkdir /tmp/pxeserver
